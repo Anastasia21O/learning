@@ -1,0 +1,40 @@
+1)  :checked
+
+CSS псевдоклассы :checked CSS находит любые элементы radio (<input type="radio">), checkbox (<input type="checkbox">) или option (<option> внутри <select>), 
+которые выбраны или включены. Пользователь может изменить это состояние, нажав на элемент, или выбрав другое значение, в этом случае :checked повторно не 
+применится к элементу, а сохранится.
+
+Синтаксис:
+
+input:checked {
+  margin-left: 25px;
+  border: 1px solid blue;
+}
+
+Формальный синтаксис:
+
+element:checked { стили }
+
+Примеры:
+Примеры селекторов:
+
+/* любой "кликабельный" элемент */
+:checked {
+  width: 50px;
+  height: 50px;
+}
+
+/* только радиокнопки */
+input[type="radio"]:checked {
+  margin-left: 25px;
+}
+
+/* только чекбоксы */
+input[type="checkbox"]:checked {
+  display: none;
+}
+
+/* только элементы option */
+option:checked {
+  color: red;
+}
